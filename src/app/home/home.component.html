@@ -1,0 +1,55 @@
+<br>
+<div style="text-align: right;" >
+  <button class="btn btn-primary" (click)="logout()"> LOGOUT </button>
+</div>
+<hr>
+<br>
+<div style="text-align: center;">
+    <br>
+    <h1> WELCOME to MANUFACTURER </h1>
+    <hr>
+</div>
+<br>
+<br><br>
+<div style="text-align: center;">
+    <h1>
+      Create a MANUFACTURER 
+    </h1>
+
+    <input placeholder=" MANUFACTURER NAME" type="text" [(ngModel)]="name" required>
+    <br>
+    <input placeholder="EMAIL" type="email" [(ngModel)]="email" required>
+    <br>
+    <input placeholder="PASSWORD" type="password" [(ngModel)]="pass" required>
+    <br>
+    <button class="btn btn-primary" (click)="manufa()" > CREATE</button>
+</div>
+<br>
+
+<div style="text-align: center;">
+    <h1>
+        FACTORIES DETAIL
+      </h1>
+
+      
+ <input placeholder="MainFactory" type="text" [(ngModel)]="MF">
+ <br>
+ <input placeholder="AlternateFactory" type="text" [(ngModel)]="AF">
+ <br>
+ <input placeholder="Corporate Address" type="text" [(ngModel)]="ADDRES">
+ <br>
+ <input placeholder="Corporate email" type="email" [(ngModel)]="EM">
+ <br>
+ <input placeholder="Corporate Telephone" type="text" [(ngModel)]="TEL">
+ <br>
+ <input placeholder="PLegal Number (RFC)" type="text" [(ngModel)]="RFC">
+
+   <div>
+       <Button class="btn btn-primary" (click)="check()" > CHECK</Button>
+   </div>
+</div>
+
+<div style="text-align: center;" >
+    <h1>Go to the Users</h1>
+    <button class="btn btn-primary" (click)="gotousers()" > GO</button>
+</div>
